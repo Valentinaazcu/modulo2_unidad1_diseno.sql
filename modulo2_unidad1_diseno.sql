@@ -1,0 +1,15 @@
+CREATE TABLE Clientes(
+IDClientes INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
+Nombre VARCHAR (100) NOT NULL,
+Perfil_Bio TEXT NOT NULL,
+Fecha_Registro DATE NOT NULL
+);
+SELECT * FROM Clientes;
+
+CREATE TABLE Producto(
+IdProducto INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
+Descripción VARCHAR (255) NOT NULL,
+Precio DECIMAL (10,2) NOT NULL,
+Esta_Activo INT NOT NULL
+);
+SELECT * FROM Producto;
